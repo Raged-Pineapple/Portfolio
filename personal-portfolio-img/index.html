@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anirudh C's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/updated-logo.png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+                
+            </ul>
+        </nav>
+        <div class="header-text">
+        <p>UI/UX Designer</p>
+        <h1>Hi,I'm <span>Anirudh C</span><br>from India</h1>
+        </div>
+    </div>
+</div>
+<!-- ---------about---------- -->
+<div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+            <img src="images/user.png">
+        </div>
+        <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+                I’m <strong>Anirudh C</strong>, an AI engineer in the making and tech enthusiast from Bengaluru, India — currently pursuing my B.E. in Information Science at RV College of Engineering with a CGPA of <strong>9.46</strong>. I'm not just coding for fun; I’m coding for impact. With a passion for solving real-world problems using Machine Learning, IoT, and smart automation.
+              </p>
+              <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+              </div>
+              <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                    <li><span>Web Development</span><br>Web app Development</li>
+                    <li><span>App Development</span><br>Building Android/iOS apps</li>   
+                </ul>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2025 - Current</span><br>Development Bootcamp at RVCE Coding Club</li>
+                        <li><span>2024 - 2025</span><br>Machine Learning Member at Google Developer Groups RVCE</li>
+                        <li><span>2023 - 2024</span><br>Machine Learning Specialization -Andrew NG on Coursera</li>   
+                    </ul>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2027</span><br>BE from R V College of Engineering </li>
+                            <li><span>2023</span><br>Senior Secondary Education (CBSE) – Class 12 Sri Chaitanya Techno School</li>
+                            <li><span>2019</span><br>Secondary School Education (CBSE) – Class 10 Sri Jnanakshi Vidyaniketan</li>   
+                        </ul>
+              </div>
+        </div>
+
+      </div>  
+    </div>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+  
+    function opentab(tabname) {
+      for (let tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (let tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>  
+</body>
+</html>
