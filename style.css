@@ -193,6 +193,21 @@
      background: #ff004f;
      transform: translateY(-10);
   }
+  .services-list a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #fff; /* Orange color */
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s;
+  }
+  
+  .services-list a:hover {
+    color: #fff; /* Darker orange on hover */
+    border-bottom: 2px solid #ff7b00; /* Underline on hover */
+  }
+  
   /* ----------------portfolio---------------- */
   #portfolio{
     padding: 50px 0;
@@ -302,6 +317,27 @@
   display: inline-block;
   background: #ff004f;
 }
+.coding-icons {
+  margin-top: 20px;
+}
+
+.coding-icons a {
+  display: inline-block;
+  margin: 10px;
+}
+
+.coding-icon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.coding-icon:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 10px #ff004f; /* cool glow on hover */
+}
+
 .contact-right form{
   width: 100%;
 }
@@ -333,6 +369,7 @@ form .btn2{
 .copyright i{
   color: #ff004f;
 }
+
 /* -------------------------css for small screen--------------- */
 nav ul .fas {
   display: none;
