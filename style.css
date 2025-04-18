@@ -7,6 +7,9 @@
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
   }
+  html{
+    scroll-behavior: smooth;
+  }
   
   body {
     background: #080808;
@@ -331,8 +334,12 @@ form .btn2{
   color: #ff004f;
 }
 /* -------------------------css for small screen--------------- */
-nav.fas{
+nav ul .fas {
   display: none;
+}
+
+nav .fa-bars {
+  display: none; 
 }
 
 @media only screen and (max-width: 600px){
@@ -348,7 +355,7 @@ nav.fas{
   .header-text h1{
     font-size: 30px;
   }
-  nav.fas{
+  nav .fas{
     display: block;
     font-size: 25px;
   }
@@ -367,10 +374,41 @@ nav.fas{
     display: block;
     margin: 25px;
   }
-  nav ul .fas{
+  nav ul .fas {
+    display: block;
     position: absolute;
-    top: 25px;
-    left: 25px;
-    cursor:pointer;
+    top: 20px;
+    right: 25px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #fff;
   }
+  
+  .sub-title{
+    font-size: 40px;
+  }
+  .about-col-1, .about-col-2{
+    flex-basis: 100%;
+  }
+  .about-col-1{
+    margin-bottom: 30px;
+  }
+  .about-col-2{
+    font-size: 14px;
+  }
+  .tab-links{
+    font-size: 16px;
+    margin-right: 30px;
+  }
+  .contact-left, .contact-right{
+    flex-basis: 100%;
+  }
+  .copyright{
+    font-size: 14px;
+  }
+}
+#msg{
+  color: #61b752;
+  margin-top: -40px;
+  display: block;
 }
